@@ -23,6 +23,7 @@ void Game::mainMenu()
 	std::cout << " 0: Quit Game" << std::endl;
 	std::cout << " 1: Player Stats" << std::endl;
 	std::cout << " 2: Enemy Stats" << std::endl;
+	std::cout << " 3: Travel" << std::endl;
 	
 	std::cout << "Enter Choice" << std::endl;
 	std::cin >> choice;
@@ -39,10 +40,18 @@ void Game::mainMenu()
 	case 2:
 		NewEnemy();
 		break;
+	case 3:
+		Travel();
+		break;
 	default:
 		std::cout << "Invalid Option" << std::endl;
 		break;
 	}
+}
+
+void Game::Travel()
+{
+	v.GenerateEvent(player);
 }
 
 void Game::SavePlayer()

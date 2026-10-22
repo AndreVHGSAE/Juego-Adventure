@@ -1,5 +1,9 @@
 #include "Enemy.h"
 
+Enemy::Enemy()
+{
+}
+
 Enemy::Enemy(std::string name, int l, int hp, int damage, int defence, int exp)
 {
 	InitCharacter(name);

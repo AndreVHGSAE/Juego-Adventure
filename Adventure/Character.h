@@ -18,10 +18,14 @@ public:
 	virtual ~Character();
 	void InitCharacter(std::string n);
 	void PrintStats();
+	void TakeDamage(int d);
+	const int DoDamage();
+	bool IsAlive();
+	
 
 	//Gets
 	std::string GetName() { return name; }
-	int GetLevel() { return level; }
+	int GetLevel() { return this->level; }
 	int GetHP() { return hp; }
 	int GetEXP() { return exp; }
 	int GetDamageMin() { return damageMin; }
