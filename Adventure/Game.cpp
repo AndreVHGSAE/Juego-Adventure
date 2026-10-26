@@ -24,6 +24,8 @@ void Game::mainMenu()
 	std::cout << " 1: Player Stats" << std::endl;
 	std::cout << " 2: Enemy Stats" << std::endl;
 	std::cout << " 3: Travel" << std::endl;
+	std::cout << " 4: Level Up" << std::endl;
+	std::cout << " 5: Skill Up" << std::endl;
 	
 	std::cout << "Enter Choice" << std::endl;
 	std::cin >> choice;
@@ -43,9 +45,41 @@ void Game::mainMenu()
 	case 3:
 		Travel();
 		break;
+	case 4:
+		LevelUp();
+		break;
+	case 5:
+		SkillUp();
+		break;
 	default:
 		std::cout << "Invalid Option" << std::endl;
 		break;
+	}
+}
+
+void Game::LevelUp()
+{
+	player.LevelUp();
+}
+
+void Game::SkillUp()
+{
+	while (player.GetSkillPoints() > 0)
+	{
+		std::cout << "You have " << player.GetSkillPoints()
+			<< " point(s) to use" << std::endl;
+		std::cout << "--------Stats--------" << std::endl;
+		std::cout << " 1: Strenght" << std::endl;
+		std::cout << " 2: Agility" << std::endl;
+		std::cout << " 3: Intelligence" << std::endl;
+		std::cout << " 4: Luck" << std::endl;
+		std::cout << " 5: Dexterity" << std::endl;
+		std::cin >> choice;
+		player.AddStats(choice, 1);
+	}
+	if (player.GetSkillPoints() <= 0)
+	{
+		std::cout << "Not Enough Points" << std::endl;
 	}
 }
 
@@ -74,7 +108,7 @@ void Game::NewEnemy()
 	srand(static_cast<unsigned int>(time(0)));
 	std::string name = "slime";
 	int level = (rand() % 10 - 1 + 1);
-	int damage = (rand() % 100 - 1 + 1);
+	int damage = (rand() % 10 - 1 + 1);
 	int hp = (rand() % 100 - 1 + 1);
 	int xp = (rand() % 1000 - 1 + 1);
 	int defence = (rand() % 50 - 1 + 1);

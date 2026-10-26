@@ -39,5 +39,7 @@ public:
 	void SetDamageMin(int DM) { damageMin = DM; }
 	void SetDamageMax(int DM) { damageMax = DM; }
 	void SetDefence(int D) { defence = D; }
+
+	void AddExp(int xp) { exp += xp; }
 };
 

@@ -9,11 +9,17 @@ private:
     int intelligence;
     int luck;
     int dexterity;
+
+    int MaxEXP;
+    int SkillPoints;
 public:
     Player();
     void InitPlayer(std::string name);
     void PrintPlayerStats();
     ~Player();
+    void LevelUp();
+    void AddStats(int stat, int value);
+    void UpdateValues();
 
     //Get
     int GetStrenght() { return strenght; }
@@ -21,6 +27,8 @@ public:
     int GetIntelligence() { return intelligence; }
     int GetLuck() { return luck; }
     int GetDexterity() { return dexterity; }
+
+    int GetSkillPoints() { return SkillPoints; }
 
     //Set
     void SetStrenght(int s) {strenght = s; }

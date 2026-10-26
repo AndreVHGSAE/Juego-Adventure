@@ -49,13 +49,11 @@ void Event::EnemyEncounter(Player& p)
 
 	int level = p.GetLevel();
 	int hp = level * 10;
-	int damageMin = (rand() % level + 1);
-	int damageMax = (rand() % level + 1)*2;
-	int currentDamage = rand() / (damageMax - damageMin + 1);
+	int currentDamage = rand() % p.GetDamageMin() + 1;
 	int defence = rand() % level;
-	int exp = rand() % level * 10;
+	int exp =level * 10;
 	baseEnemy = new Enemy("Duende", level, hp, currentDamage, defence, exp);
-	while (!playerDefeated || !enemyDefeated || !escaped)
+	while (!playerDefeated && !enemyDefeated && !escaped)
 	{
 		if (playerTurn)
 		{
@@ -112,6 +110,12 @@ void Event::EnemyEncounter(Player& p)
 				enemyDefeated = true;
 				std::cout << "Enemy Defeated" << std::endl;
 				std::cout << "Exp: " << baseEnemy->GetEXP() << std::endl;
+				p.AddExp(baseEnemy->GetEXP());
+			}
+			if (!p.IsAlive())
+			{
+				playerDefeated = true;
+				std::cout << "You lost" << std::endl;
 			}
 			else
 			{

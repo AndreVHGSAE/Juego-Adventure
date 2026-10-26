@@ -17,6 +17,9 @@ public:
 	void InitGame();
 	void mainMenu();
 
+	void LevelUp();
+	void SkillUp();
+
 	void Travel();
 
 	void SavePlayer();
