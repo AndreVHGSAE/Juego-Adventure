@@ -1,50 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\",
+  "WorkspaceRootPath": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Event.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Event.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Event.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Adventure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Adventure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Adventure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F64B230C-E1F1-4857-9FC1-F012D65893FB}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Adventure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,15 +54,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 185,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Event.h",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Event.h",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Event.h",
               "RelativeDocumentMoniker": "Adventure\\Event.h",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Event.h",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Event.h",
               "RelativeToolTip": "Adventure\\Event.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -71,11 +71,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Enemy.h",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Enemy.h",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Enemy.h",
               "RelativeDocumentMoniker": "Adventure\\Enemy.h",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Enemy.h",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Enemy.h",
               "RelativeToolTip": "Adventure\\Enemy.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -84,55 +84,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Player.h",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Player.h",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Player.h",
               "RelativeDocumentMoniker": "Adventure\\Player.h",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Player.h",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Player.h",
               "RelativeToolTip": "Adventure\\Player.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-19T15:24:07.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Character.h",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Character.h",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Character.h",
               "RelativeDocumentMoniker": "Adventure\\Character.h",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Character.h",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Character.h",
               "RelativeToolTip": "Adventure\\Character.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-15T17:26:59.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "Game.h",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Game.h",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Game.h",
               "RelativeDocumentMoniker": "Adventure\\Game.h",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Game.h",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Game.h",
               "RelativeToolTip": "Adventure\\Game.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-15T17:11:00.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Adventure.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Adventure.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Adventure.cpp",
               "RelativeDocumentMoniker": "Adventure\\Adventure.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Adventure.cpp",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Adventure.cpp",
               "RelativeToolTip": "Adventure\\Adventure.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-10-15T17:07:41.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T17:07:41.975Z"
             }
           ]
         },
@@ -144,22 +143,22 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Event.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Event.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Event.cpp",
               "RelativeDocumentMoniker": "Adventure\\Event.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Event.cpp*",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Event.cpp*",
               "RelativeToolTip": "Adventure\\Event.cpp*",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAHUAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAHYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-22T15:26:13.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Enemy.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Enemy.cpp",
               "RelativeDocumentMoniker": "Adventure\\Enemy.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Enemy.cpp",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Enemy.cpp",
               "RelativeToolTip": "Adventure\\Enemy.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -168,39 +167,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Player.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Player.cpp",
               "RelativeDocumentMoniker": "Adventure\\Player.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Player.cpp*",
-              "RelativeToolTip": "Adventure\\Player.cpp*",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAC4AAAACAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Player.cpp",
+              "RelativeToolTip": "Adventure\\Player.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-19T15:24:32.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Character.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Character.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Character.cpp",
               "RelativeDocumentMoniker": "Adventure\\Character.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Character.cpp",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Character.cpp",
               "RelativeToolTip": "Adventure\\Character.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-15T17:30:34.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Game.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Game.cpp",
               "RelativeDocumentMoniker": "Adventure\\Game.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Documents\\Miguel Andre GPD\\Juego Adventure\\Adventure\\Game.cpp",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\PDJC\\Juego-Adventure\\Adventure\\Game.cpp",
               "RelativeToolTip": "Adventure\\Game.cpp",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHMAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAHsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-15T17:13:51.79Z",
               "EditorCaption": ""

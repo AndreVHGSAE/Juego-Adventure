@@ -3,6 +3,7 @@
 #include "Player.h"
 #include "Enemy.h"
 #include "Event.h"
+#include <fstream>
 class Game
 {
 private:

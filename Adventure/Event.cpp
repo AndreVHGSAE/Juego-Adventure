@@ -116,6 +116,7 @@ void Event::EnemyEncounter(Player& p)
 			{
 				playerDefeated = true;
 				std::cout << "You lost" << std::endl;
+				//p.LoadStats("savePlayer.txt");
 			}
 			else
 			{
