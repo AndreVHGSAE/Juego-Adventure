@@ -8,9 +8,14 @@ class Event
 private:
 	int numOfEvents;
 	Enemy* baseEnemy;
+	Enemy* Enemy1;
+	Enemy* Enemy2;
+	Enemy* Enemy3;
 public:
 	Event();
 	~Event();
+	
+	Enemy * GetRandomEnemy(Player& p);
 
 	void GenerateEvent(Player& p);
 	void EnemyEncounter(Player& p);

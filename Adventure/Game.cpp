@@ -133,7 +133,8 @@ void Game::NewEnemy()
 	int hp = (rand() % 100 - 1 + 1);
 	int xp = (rand() % 1000 - 1 + 1);
 	int defence = (rand() % 50 - 1 + 1);
-	enemy = new Enemy(name, level, hp, damage, defence, xp);
+	int modifier = 10;
+	enemy = new Enemy(name, level, hp, damage, defence, xp, modifier);
 	enemy->PrintEnemyStats();
 }
 

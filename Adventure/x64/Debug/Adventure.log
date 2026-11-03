@@ -1,26 +1,2 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(520,5): warning MSB8003: La propiedad WindowsSDKDir no está definida. No se encuentran algunas herramientas de compilación.
-  Adventure.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cfloat(10,10): error C1083: No se puede abrir el archivo incluir: 'float.h': No such file or directory
-  (compilando archivo de origen "Adventure.cpp")
-  
-  Character.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cfloat(10,10): error C1083: No se puede abrir el archivo incluir: 'float.h': No such file or directory
-  (compilando archivo de origen "Character.cpp")
-  
-  Enemy.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cfloat(10,10): error C1083: No se puede abrir el archivo incluir: 'float.h': No such file or directory
-  (compilando archivo de origen "Enemy.cpp")
-  
-  Event.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cfloat(10,10): error C1083: No se puede abrir el archivo incluir: 'float.h': No such file or directory
-  (compilando archivo de origen "Event.cpp")
-  
-  Game.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cfloat(10,10): error C1083: No se puede abrir el archivo incluir: 'float.h': No such file or directory
-  (compilando archivo de origen "Game.cpp")
-  
-  Player.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cfloat(10,10): error C1083: No se puede abrir el archivo incluir: 'float.h': No such file or directory
-  (compilando archivo de origen "Player.cpp")
-  
-  Generando código...
+﻿  Game.cpp
+  Adventure.vcxproj -> C:\Users\vanha\Desktop\Visual Studio\Juego-Adventure\x64\Debug\Adventure.exe

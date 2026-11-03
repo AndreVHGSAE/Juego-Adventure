@@ -8,6 +8,30 @@ Event::~Event()
 {
 }
 
+Enemy* Event::GetRandomEnemy(Player& p)
+{
+	int level = p.GetLevel();
+	int hp = level;
+	int currentDamage = rand() % p.GetDamageMin() + 1;
+	int defence = rand() % level;
+	int exp = level;
+	
+	int RE = rand() % 3 + 1;
+	switch (RE)
+	{
+	case 1:
+		return new Enemy("Duende", level, hp, currentDamage, defence, exp, 10);
+	case 2:
+		return new Enemy("Duende", level, hp, currentDamage, defence, exp, 10);
+	case 3:
+		return new Enemy("Duende", level, hp, currentDamage, defence, exp, 10);
+	default:
+		std::cout << "Not possible" << std::endl;
+		break;
+	}
+	return nullptr;
+}
+
 void Event::GenerateEvent(Player& p)
 {
 	srand(static_cast<unsigned int>(time(0)));
@@ -47,12 +71,7 @@ void Event::EnemyEncounter(Player& p)
 	}
 	std::cout << "------New Enemy Encounter------" << std::endl;
 
-	int level = p.GetLevel();
-	int hp = level * 10;
-	int currentDamage = rand() % p.GetDamageMin() + 1;
-	int defence = rand() % level;
-	int exp =level * 10;
-	baseEnemy = new Enemy("Duende", level, hp, currentDamage, defence, exp);
+	baseEnemy = GetRandomEnemy(p);
 	while (!playerDefeated && !enemyDefeated && !escaped)
 	{
 		if (playerTurn)
