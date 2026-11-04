@@ -1,5 +1,6 @@
 #include "Event.h"
 
+
 Event::Event()
 {
 }
@@ -22,9 +23,9 @@ Enemy* Event::GetRandomEnemy(Player& p)
 	case 1:
 		return new Enemy("Duende", level, hp, currentDamage, defence, exp, 10);
 	case 2:
-		return new Enemy("Duende", level, hp, currentDamage, defence, exp, 10);
+		return new Enemy("Ogro", level, hp, currentDamage, defence, exp, 15);
 	case 3:
-		return new Enemy("Duende", level, hp, currentDamage, defence, exp, 10);
+		return new Enemy("Dragon", level, hp, currentDamage, defence, exp, 20);
 	default:
 		std::cout << "Not possible" << std::endl;
 		break;
@@ -35,14 +36,25 @@ Enemy* Event::GetRandomEnemy(Player& p)
 void Event::GenerateEvent(Player& p)
 {
 	srand(static_cast<unsigned int>(time(0)));
-	int i = rand() % 10;
+	int RT = 6;
+	//int RT = rand() % 10;
+	int i = 2;
+	if (RT > 8)
+	{
+		int i = 1;
+	}
+	else if (RT > 5)
+	{
+		int i = 2;
+	}
 	switch (i)
 	{
-	case 7:
+	case 1:
 		std::cout << "Keep traveling..." << std::endl;
 		break;
-	case 5:
+	case 2:
 		std::cout << "Puzzle Encounter" << std::endl;
+		PuzzleEncounter(p);
 		break;
 	default:
 		std::cout << "Enemy Encounter" << std::endl;
@@ -135,7 +147,7 @@ void Event::EnemyEncounter(Player& p)
 			{
 				playerDefeated = true;
 				std::cout << "You lost" << std::endl;
-				//p.LoadStats("savePlayer.txt");
+				p.LoadStats("savePlayer.txt");
 			}
 			else
 			{
@@ -172,4 +184,39 @@ void Event::EnemyEncounter(Player& p)
 
 void Event::PuzzleEncounter(Player& p)
 {
+	Revuelto r = Revuelto();
+	Ahorcado a = Ahorcado();
+	Gato g = Gato();
+	
+	//int RP = rand() % 3 + 1;
+	int RP = 3;
+	switch (RP)
+	{
+	case 1:
+	{
+		int Reward = r.RevueltoGame();
+		std::cout << "You got " << Reward << " XP!" << std::endl;
+		p.AddExp(Reward);
+		break;
+	}
+	case 2:
+	{
+		int Reward = a.AhorcadoGame();
+		std::cout << "You got " << Reward << " XP!" << std::endl;
+		p.AddExp(Reward);
+		break;
+	}
+	case 3:
+	{
+		int Reward = g.GatoGame();
+		std::cout << "You got " << Reward << " XP!" << std::endl;
+		p.AddExp(Reward);
+		break;
+	}
+	default:
+	{
+		std::cout << "Not possible" << std::endl;
+		break;
+	}
+	}
 }

@@ -2,15 +2,15 @@
 #include <iostream>
 #include "Enemy.h"
 #include "Player.h"
+#include "Revuelto.h"
+#include "Ahorcado.h"
+#include "Gato.h"
 
 class Event
 {
 private:
 	int numOfEvents;
 	Enemy* baseEnemy;
-	Enemy* Enemy1;
-	Enemy* Enemy2;
-	Enemy* Enemy3;
 public:
 	Event();
 	~Event();

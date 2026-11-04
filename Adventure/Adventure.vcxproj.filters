@@ -33,6 +33,15 @@
     <ClCompile Include="Event.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Revuelto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ahorcado.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gato.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -48,6 +57,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Revuelto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ahorcado.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gato.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
