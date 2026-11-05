@@ -2,11 +2,11 @@
 
 Player::Player() :Character()
 {
-	this->strenght = 5;
-	this->agility = 5;
-	this->intelligence = 5;
-	this->luck = 5;
-	this->dexterity = 5;
+	this->strenght = 10;
+	this->agility = 10;
+	this->intelligence = 10;
+	this->luck = 10;
+	this->dexterity = 10;
 }
 
 void Player::InitPlayer(std::string name)
@@ -14,10 +14,10 @@ void Player::InitPlayer(std::string name)
 	InitCharacter(name);
 	SetLevel(1);
 	SetExp(0);
-	SetHP((this->intelligence*2) / (this->dexterity-2));
+	SetHP((this->intelligence*2) - (this->dexterity));
 	SetDamageMin(this->strenght - 2);
 	SetDamageMax(this->strenght * 2);
-	SetDefence((this->agility * 2) / (this->luck - 2));
+	SetDefence((this->agility * 2) - (this->luck * 1.5f));
 	this->MaxEXP = 10;
 }
 

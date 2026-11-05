@@ -21,11 +21,11 @@ Enemy* Event::GetRandomEnemy(Player& p)
 	switch (RE)
 	{
 	case 1:
-		return new Enemy("Duende", level, hp, currentDamage, defence, exp, 10);
+		return new Enemy("Duende", level, hp+10, currentDamage, defence, exp*1, 10);
 	case 2:
-		return new Enemy("Ogro", level, hp, currentDamage, defence, exp, 15);
+		return new Enemy("Ogro", level+1, hp+15, currentDamage, defence+1, exp*2, 15);
 	case 3:
-		return new Enemy("Dragon", level, hp, currentDamage, defence, exp, 20);
+		return new Enemy("Dragon", level+2, hp+30, currentDamage, defence+2, exp*5, 20);
 	default:
 		std::cout << "Not possible" << std::endl;
 		break;
@@ -36,16 +36,24 @@ Enemy* Event::GetRandomEnemy(Player& p)
 void Event::GenerateEvent(Player& p)
 {
 	srand(static_cast<unsigned int>(time(0)));
-	int RT = 6;
-	//int RT = rand() % 10;
-	int i = 2;
+	//int RT = 6;
+	int RT = rand() % 10;
+	int i = 0;
 	if (RT > 8)
 	{
-		int i = 1;
+		i = 1;
 	}
 	else if (RT > 5)
 	{
-		int i = 2;
+		i = 2;
+	}
+	else if (RT > 4)
+	{
+		i = 3;
+	}
+	else
+	{
+		i = 0;
 	}
 	switch (i)
 	{
@@ -55,6 +63,11 @@ void Event::GenerateEvent(Player& p)
 	case 2:
 		std::cout << "Puzzle Encounter" << std::endl;
 		PuzzleEncounter(p);
+		break;
+	case 3:
+		std::cout << "HP Healing Hotspring" << std::endl;
+		std::cout << "You healed 10 HP!" << std::endl;
+		p.TakeDamage(-10);
 		break;
 	default:
 		std::cout << "Enemy Encounter" << std::endl;
@@ -142,12 +155,14 @@ void Event::EnemyEncounter(Player& p)
 				std::cout << "Enemy Defeated" << std::endl;
 				std::cout << "Exp: " << baseEnemy->GetEXP() << std::endl;
 				p.AddExp(baseEnemy->GetEXP());
+				return;
 			}
 			if (!p.IsAlive())
 			{
 				playerDefeated = true;
 				std::cout << "You lost" << std::endl;
 				p.LoadStats("savePlayer.txt");
+				return;
 			}
 			else
 			{
@@ -188,12 +203,17 @@ void Event::PuzzleEncounter(Player& p)
 	Ahorcado a = Ahorcado();
 	Gato g = Gato();
 	
-	//int RP = rand() % 3 + 1;
-	int RP = 3;
+	std::system("cls");
+	std::cout << "------Puzzle Encounter------" << std::endl;
+	std::cout << "Solve the minigame to get EXP Reward!" << std::endl;
+
+	int RP = rand() % 3 + 1;
+	//int RP = 3;
 	switch (RP)
 	{
 	case 1:
 	{
+		std::cout << "------Word Scramble------" << std::endl;
 		int Reward = r.RevueltoGame();
 		std::cout << "You got " << Reward << " XP!" << std::endl;
 		p.AddExp(Reward);
@@ -201,6 +221,7 @@ void Event::PuzzleEncounter(Player& p)
 	}
 	case 2:
 	{
+		std::cout << "------Word Guess------" << std::endl;
 		int Reward = a.AhorcadoGame();
 		std::cout << "You got " << Reward << " XP!" << std::endl;
 		p.AddExp(Reward);
@@ -208,6 +229,7 @@ void Event::PuzzleEncounter(Player& p)
 	}
 	case 3:
 	{
+		std::cout << "------Tic-tac-toe------" << std::endl;
 		int Reward = g.GatoGame();
 		std::cout << "You got " << Reward << " XP!" << std::endl;
 		p.AddExp(Reward);

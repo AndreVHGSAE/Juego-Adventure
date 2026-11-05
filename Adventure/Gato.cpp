@@ -35,7 +35,25 @@ int Gato::GatoGame()
 
         DisplayBoard(&board);
     }
-    return 5;
+    
+    char result = Winner(board);
+
+    if (result == human)
+    {
+        std::cout << "You won the game!" << std::endl;
+        return 10;
+    }
+    else if (result == CPU)
+    {
+        std::cout << "You lost" << std::endl;
+        return 0;
+    }
+    else if (result == TIE)
+    {
+        std::cout << "It's a tie" << std::endl;
+        return 5;
+    }
+
 }
 
 void Gato::Instructions()
@@ -72,7 +90,7 @@ void Gato::DisplayBoard(const std::vector<char>* board)
 int Gato::MovePlayer(std::vector<char> board)
 {
     int move;
-    std::cout << "Where do you want to move?" << std::endl;
+    std::cout << "Where do you want to put your piece?" << std::endl;
     std::cin >> move;
     while (!IsEmpty(move, &board))
     {
@@ -163,19 +181,9 @@ char Gato::Winner(std::vector<char> board)
 
 char Gato::PlayerPiece()
 {
-    char answer;
-    std::cout << "Do you want to go first? (Y/N)" << std::endl;
-    std::cin >> answer;
-    answer = toupper(answer);
+    std::cout << "You go first" << std::endl;
 
-    if (answer == 'Y')
-    {
         return X;
-    }
-    else
-    {
-        return O;
-    }
 }
 
 char Gato::CPUPiece(char piece)
