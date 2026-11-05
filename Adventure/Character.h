@@ -10,7 +10,8 @@ private:
 	int damageMin;
 	int damageMax;
 	int defence;
-
+	
+	int heal;
 protected:
 
 public:

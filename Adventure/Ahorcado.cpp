@@ -66,7 +66,7 @@ int Ahorcado::AhorcadoGame()
         std::cout << "You won!" << std::endl;
         std::cout << "With " << NumGuesses << " guesses" << std::endl;
     }
-    Lives * 5;
+    Lives * 5 * 2;
     return Lives;
 }
 

@@ -23,14 +23,12 @@ void Character::InitCharacter(std::string n)
 
 void Character::PrintStats()
 {
-	std::system("cls");
 	std::cout << "----" << this->name << std::endl;
 	std::cout << "Level: " << this->level << std::endl;
 	std::cout << "HP: " << this->hp << std::endl;
 	std::cout << "Exp: " << this->exp << std::endl;
 	std::cout << "Damage: " << this->damageMin << "/" << this->damageMax << std::endl;
 	std::cout << "Defence: " << this->defence << std::endl;
-	std::cout << std::endl;
 }
 
 void Character::TakeDamage(int d)
@@ -40,7 +38,9 @@ void Character::TakeDamage(int d)
 
 const int Character::DoDamage()
 {
-	return (rand() % (this->damageMax - this->damageMin + 1)) + this->damageMin;
+	int Damage = (rand() % (this->damageMax - this->damageMin + 1)) + this->damageMin;
+	std::cout << "hit with " << Damage << " damage" << std::endl;
+	return Damage;
 }
 
 bool Character::IsAlive()

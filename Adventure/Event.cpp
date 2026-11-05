@@ -13,19 +13,20 @@ Enemy* Event::GetRandomEnemy(Player& p)
 {
 	int level = p.GetLevel();
 	int hp = level;
-	int currentDamage = rand() % p.GetDamageMin() + 1;
+	int currentDamage = (rand() % p.GetDamageMin() + 1);
 	int defence = rand() % level;
-	int exp = level;
+	int exp = level*3;
+	int modifier = (p.GetLevel()/10)+1;
 	
 	int RE = rand() % 3 + 1;
 	switch (RE)
 	{
 	case 1:
-		return new Enemy("Duende", level, hp+10, currentDamage, defence, exp*1, 10);
+		return new Enemy("Duende", level, hp+10, currentDamage, defence, exp*2, modifier);
 	case 2:
-		return new Enemy("Ogro", level+1, hp+15, currentDamage, defence+1, exp*2, 15);
+		return new Enemy("Ogro", level+1, hp+15, currentDamage*1.2f, defence+1, exp*3, modifier+0.1f);
 	case 3:
-		return new Enemy("Dragon", level+2, hp+30, currentDamage, defence+2, exp*5, 20);
+		return new Enemy("Dragon", level+2, hp+30, currentDamage*1.5f, defence+2, exp*5, modifier+0.2);
 	default:
 		std::cout << "Not possible" << std::endl;
 		break;
@@ -35,6 +36,7 @@ Enemy* Event::GetRandomEnemy(Player& p)
 
 void Event::GenerateEvent(Player& p)
 {
+	std::system("cls");
 	srand(static_cast<unsigned int>(time(0)));
 	//int RT = 6;
 	int RT = rand() % 10;
@@ -43,7 +45,7 @@ void Event::GenerateEvent(Player& p)
 	{
 		i = 1;
 	}
-	else if (RT > 5)
+	else if (RT > 6)
 	{
 		i = 2;
 	}
@@ -55,22 +57,21 @@ void Event::GenerateEvent(Player& p)
 	{
 		i = 0;
 	}
+	int heal = (rand() % 15 + 5);
 	switch (i)
 	{
 	case 1:
 		std::cout << "Keep traveling..." << std::endl;
 		break;
 	case 2:
-		std::cout << "Puzzle Encounter" << std::endl;
 		PuzzleEncounter(p);
 		break;
 	case 3:
 		std::cout << "HP Healing Hotspring" << std::endl;
-		std::cout << "You healed 10 HP!" << std::endl;
-		p.TakeDamage(-10);
+		std::cout << "You healed " << heal << " HP!" << std::endl;
+		p.TakeDamage(-heal);
 		break;
 	default:
-		std::cout << "Enemy Encounter" << std::endl;
 		EnemyEncounter(p);
 		break;
 	}
@@ -78,7 +79,6 @@ void Event::GenerateEvent(Player& p)
 
 void Event::EnemyEncounter(Player& p)
 {
-	std::system("cls");
 	int choice = 0;
 	bool playerDefeated = false;
 	bool enemyDefeated = false;
@@ -97,21 +97,48 @@ void Event::EnemyEncounter(Player& p)
 	std::cout << "------New Enemy Encounter------" << std::endl;
 
 	baseEnemy = GetRandomEnemy(p);
+
+	
+
 	while (!playerDefeated && !enemyDefeated && !escaped)
 	{
 		if (playerTurn)
 		{
+			if (!baseEnemy->IsAlive())
+			{
+				enemyDefeated = true;
+				std::cout << "ENEMY DEFEATED" << std::endl;
+				std::cout << "Exp: " << baseEnemy->GetEXP() << std::endl;
+				p.AddExp(baseEnemy->GetEXP());
+				return;
+			}
+			if (!p.IsAlive())
+			{
+				playerDefeated = true;
+				std::cout << "YOU LOST" << std::endl;
+				std::cout << "Resseting to last save" << std::endl;
+				p.LoadStats("savePlayer.txt");
+				return;
+			}
+			
+			p.PrintPlayerStats();
+			baseEnemy->PrintStats();
+			
 			std::cout << "----------PLAYER TURN----------" << std::endl;
 			std::cout << "Choose your action" << std::endl;
 			std::cout << "1: Attack" << std::endl;
 			std::cout << "2: Defend" << std::endl;
-			std::cout << "3: Player Sheet" << std::endl;
-			std::cout << "4: Show Enemy Stats" << std::endl;
+			std::cout << "3: Heal" << std::endl;
 			std::cout << "0: Escape" << std::endl;
 
 			std::cin >> choice;
 			int escapeRand = 0;
 			int attackRoll = 0;
+
+			int heal = (rand() % 15 + 5);
+
+			std::system("cls");
+
 			switch (choice)
 			{
 			case 0:
@@ -121,24 +148,32 @@ void Event::EnemyEncounter(Player& p)
 					std::cout << "Escaped..." << std::endl;
 					escaped = true;
 				}
+				else
+				{
+					std::cout << "Couldn't escape" << std::endl;
+				}
 				break;
 			case 1:
-				std::system("cls");
 				attackRoll = rand() % 100 + 1;
 				if (attackRoll > (50 - p.GetStrenght()))
 				{
-					std::cout << "Player hit Enemy" << std::endl;
+					std::cout << "Player ";
 					baseEnemy->TakeDamage(p.DoDamage());
+				}
+				else
+				{
+					std::cout << "Player miss Enemy" << std::endl;
 				}
 				break;
 			case 2:
 				playerDefend = true;
 				break;
 			case 3:
-				p.PrintPlayerStats();
+				std::cout << "You healed " << heal << " HP!" << std::endl;
+				p.TakeDamage(-heal);
 				break;
 			case 4:
-				baseEnemy->PrintStats();
+				std::cout << "You did nothing" << std::endl;
 				break;
 			default:
 				std::cout << "Invalid Option" << std::endl;
@@ -152,7 +187,7 @@ void Event::EnemyEncounter(Player& p)
 			if (!baseEnemy->IsAlive())
 			{
 				enemyDefeated = true;
-				std::cout << "Enemy Defeated" << std::endl;
+				std::cout << "ENEMY DEFEATED" << std::endl;
 				std::cout << "Exp: " << baseEnemy->GetEXP() << std::endl;
 				p.AddExp(baseEnemy->GetEXP());
 				return;
@@ -160,7 +195,8 @@ void Event::EnemyEncounter(Player& p)
 			if (!p.IsAlive())
 			{
 				playerDefeated = true;
-				std::cout << "You lost" << std::endl;
+				std::cout << "YOU LOST" << std::endl;
+				std::cout << "Resseting to last save" << std::endl;
 				p.LoadStats("savePlayer.txt");
 				return;
 			}
@@ -171,8 +207,9 @@ void Event::EnemyEncounter(Player& p)
 				{
 					if (enemyAttackRoll > 75)
 					{
-						std::cout << "Enemy hit player" << std::endl;
-						p.TakeDamage(baseEnemy->DoDamage());
+						std::cout << "Enemy ";
+						p.TakeDamage(baseEnemy->DoDamage()-p.GetDefence());
+						std::cout << "But the player defended, so the damage is mitigated by defense stat" << std::endl;
 					}
 					else
 					{
@@ -183,7 +220,7 @@ void Event::EnemyEncounter(Player& p)
 				{
 					if (enemyAttackRoll > 45)
 					{
-						std::cout << "Enemy hit player" << std::endl;
+						std::cout << "Enemy ";
 						p.TakeDamage(baseEnemy->DoDamage());
 					}
 					else

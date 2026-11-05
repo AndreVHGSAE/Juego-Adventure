@@ -1,2 +1,6 @@
 ﻿  Event.cpp
+C:\Users\vanha\Desktop\Visual Studio\Juego-Adventure\Adventure\Event.cpp(27,90): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\vanha\Desktop\Visual Studio\Juego-Adventure\Adventure\Event.cpp(27,57): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\vanha\Desktop\Visual Studio\Juego-Adventure\Adventure\Event.cpp(29,92): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\vanha\Desktop\Visual Studio\Juego-Adventure\Adventure\Event.cpp(29,59): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
   Adventure.vcxproj -> C:\Users\vanha\Desktop\Visual Studio\Juego-Adventure\x64\Debug\Adventure.exe

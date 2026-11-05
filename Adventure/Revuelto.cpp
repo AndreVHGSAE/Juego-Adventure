@@ -11,7 +11,7 @@ Revuelto::Revuelto()
         cout << "Let's play a word guessing name " << endl;
         cout << "START " << endl;
         string guess = "";
-        while (turn <= 5)
+        while (turn <= 4)
         {
             srand(static_cast<unsigned int>(time(0)));
             int value = (rand() % 3);

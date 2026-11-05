@@ -72,6 +72,7 @@ void Game::LevelUp()
 
 void Game::SkillUp()
 {
+	std::system("cls");
 	while (player.GetSkillPoints() > 0)
 	{
 		std::cout << "You have " << player.GetSkillPoints()
@@ -84,6 +85,7 @@ void Game::SkillUp()
 		std::cout << " 5: Dexterity" << std::endl;
 		std::cin >> choice;
 		player.AddStats(choice, 1);
+		return;
 	}
 	if (player.GetSkillPoints() <= 0)
 	{
@@ -98,6 +100,7 @@ void Game::Travel()
 
 void Game::SavePlayer()
 {
+	std::system("cls");
 	std::string fileName;
 	std::ofstream outFile("savePlayer.txt");
 	if (outFile.is_open())
@@ -114,6 +117,7 @@ void Game::SavePlayer()
 
 void Game::LoadPlayer()
 {
+	std::system("cls");
 	std::string fileName = "savePlayer.txt";
 	player.LoadStats(fileName);
 	std::cout << "Game succesfully loaded" << std::endl;
@@ -126,6 +130,7 @@ void Game::NewPlayer()
 
 void Game::NewEnemy()
 {
+	std::system("cls");
 	srand(static_cast<unsigned int>(time(0)));
 	std::string name = "slime";
 	int level = (rand() % 10 - 1 + 1);
@@ -140,6 +145,7 @@ void Game::NewEnemy()
 
 void Game::PrintPlayerStats()
 {
+	std::system("cls");
 	player.PrintPlayerStats();
 }
 

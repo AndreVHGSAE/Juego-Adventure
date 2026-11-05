@@ -14,9 +14,9 @@ void Player::InitPlayer(std::string name)
 	InitCharacter(name);
 	SetLevel(1);
 	SetExp(0);
-	SetHP((this->intelligence*2) - (this->dexterity));
-	SetDamageMin(this->strenght - 2);
-	SetDamageMax(this->strenght * 2);
+	SetHP((this->intelligence*2) - (this->dexterity) + 10);
+	SetDamageMin(this->strenght);
+	SetDamageMax(this->strenght * 1.5f);
 	SetDefence((this->agility * 2) - (this->luck * 1.5f));
 	this->MaxEXP = 10;
 }
@@ -27,12 +27,16 @@ Player::~Player()
 
 void Player::LevelUp()
 {
+	std::system("cls");
 	while (GetEXP() >= MaxEXP)
 	{
 		SetExp(GetEXP() - MaxEXP);
 		SetLevel(GetLevel() + 1);
-		MaxEXP = GetLevel() * 10;
-		SkillPoints++;
+		MaxEXP = GetLevel() * 5;
+		std::cout << "You got 2 skill points!" << std::endl;
+		std::cout << "You need " << MaxEXP << " for XP for next Level up" << std::endl;
+		SkillPoints+=2;
+		return;
 	}
 	if (GetEXP() < MaxEXP)
 	{
